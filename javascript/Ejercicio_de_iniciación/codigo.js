@@ -22,28 +22,63 @@ function printMeses() {
 
 //4
 function frase() {
+    let palabras = [true, 5, false, "hola", "adios", 2];
+    let totales = [];
+    for (let palabra of palabras) {
+        if(typeof palabra === "string" ){
+            //     palabras.push(words[i])
+            let x = totales.push(palabra[palabra])
+            totales.push(x.length);
+            }
+        
+    }
+    console.log(totales);
 
-    //     1. Determinar cuál de los dos elementos de texto es mayor
-    //      2. Utilizando exclusivamente los dos valores booleanos del array, determinar los
-    // operadores necesarios para obtener un resultado true y otro resultado false
-    // 3. Determinar el resultado de las cinco operaciones matemáticas realizadas con los
-    // dos elementos numéricos
+    let maximo = Math.max.apply(null, totales);
 
-    let valores = [true, 5, false, "hola", "adios", 2];
+    for (let elemento of palabras) {
+        if (elemento.length === maximo) {
+            console.log(elemento);
+        }
+    }
+
+
 }
 
 function whatGigString() {
 
-    
+    //let words = document.getElementById("words")
+    let words = [true, 5, false, "hola", "adios", 2]
+    let palabras = []
+
+    for (i in words) {
+        palabras.push(words[i].length)
+        //console.log(words[i])
+
+        // if(typeof i === "string" ){
+        //     palabras.push(words[i])
+        // }
+        // else{
+        //     return none 
+        // }
+    }
+    let maximo = Math.max.apply(null, palabras);
+    for (let elemento of words) {
+        if (elemento.length === maximo) {
+            document.getElementById("resulConversion").innerHTML = elemento;
+        }
+    }
+    console.log(elemento)
+
     // let palabras = true, 5 , false, "hola", "adios", 2
     // //document.getElementById('words')
     // //let palabra = ""
-    
+
     // for(i in palabras){
     //     if(typeof i === 'string' || palabras instanceof String){
     //         console.log(i)
     //     }
-    
+
     // }
 
     // //for (var i = 0 ; condición; actualización)
@@ -55,71 +90,75 @@ function whatGigString() {
     //     } else {
     //         //it is not string
     //         alert(palabras);
-       //}
+    //}
 }
 
 function matteoperation() {
     //let words = document.getElementById("words")
     let word = [true, 5, false, "hola", "adios", 2]
 
-    for (word = 0; Number.isInteger(word) === true ; word++) {
-        console.log(word)
-        // if (Number.isInteger(word)) {
-        //     console.log(word) ;
-        //     }
-        // else{
-        //     console.log('Uno');
-        // }
-        }
-        
-        
-    }
+
+}
 
 //5
 //Completar las condiciones de los if del siguiente script para que los mensajes de los alert() se muestren siempre de forma correcta:
-function condiciones(){
+function condiciones() {
     var numero1 = 5;
     var numero2 = 8;
-    
-    if(numero1 ) {
-    alert("numero1 no es mayor que numero2");
-    } if(numero2 > 0) {
-    alert("numero2 es positivo");
-    } if(numero1 >= 0) {
-    alert("numero1 es negativo o distinto de cero");
-    } if(numero1 ++ < numero2) {
-    alert("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
+
+    if (numero1) {
+        alert("numero1 no es mayor que numero2");
+    } if (numero2 > 0) {
+        alert("numero2 es positivo");
+    } if (numero1 >= 0) {
+        alert("numero1 es negativo o distinto de cero");
+    } if (numero1++ < numero2) {
+        alert("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
     }
 }
 
 //6
 //El cálculo de la letra del Documento Nacional de Identidad (DNI)
-function calcLetraDni(){
+function calcLetraDni() {
     let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
         'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-    
+
     let numDNI = prompt("Escribe los numeros de tu DNI")
     let letraDNI = prompt("Escribe la letra del dni que has metido anteriorente").toUpperCase()
-    
-    if(numDNI.length < 8 ){
+
+    if (numDNI.length < 8) {
         let mensaje = "El número proporcionado no es válido"
         document.getElementById("resulConversion").innerHTML = mensaje;
     } else {
         let posicionLetra = numDNI % 23
         let letra = letras[posicionLetra]
-        
-        if(letra == letraDNI){
+
+        if (letra == letraDNI) {
             alert("El numero de la letra del DNI es correcto: " + numDNI + letra)
-        } else{
+        } else {
             alert("El número de la letra que has puesto es erronio, en realidad para el DNI " + numDNI + " debería ser " + letra)
         }
 
     }
 }
 
+//7
+//El factorial de un número entero n es una operación matemática
+function factorial() {
+    let num = prompt("escribe un número")
+    let resultado = 1
+
+    for (let i = 1; i <= num; i++) {
+        x = x * i
+    }
+
+    document.getElementById("resulConversion").innerHTML = resultado;
+}
+
+
 //B1 
 // Calcular el peso de la luna
-function whatPesoLuna(){
+function whatPesoLuna() {
     let pesoTierra = prompt("Dime cuanto pesa en kilos")
 
     let pesoLuna = pesoTierra * 0.165
@@ -129,20 +168,20 @@ function whatPesoLuna(){
 
 //B2
 //Calcula tu Índice de Masa Corporal (IMC) 
-function calcMasaCorpoarl(){
+function calcMasaCorpoarl() {
     let peso = prompt("¿Cúanto pesa? Pon el peso en kilogramos")
     let estatura = prompt("¿Cúal es tu estatuara? Pon el resultado en metros")
 
-    let imc = peso / (Math.pow(estatura,2))
+    let imc = peso / (Math.pow(estatura, 2))
 
-    if(imc < 18){
+    if (imc < 18) {
         document.getElementById("resulConversion").innerHTML = imc + "Peso bajo. Necesario valorar signos de desnutrición";
     } else if (imc >= 18 && imc <= 24.9) {
         document.getElementById("resulConversion").innerHTML = imc + "Normal";
     } else if (imc >= 25 && imc <= 26.9) {
         document.getElementById("resulConversion").innerHTML = imc + "Sobrepeso";
     } else if (imc >= 27 && imc <= 29.9) {
-            document.getElementById("resulConversion").innerHTML = imc + "Obesidad grado I. Riesgo relativo alto para desarrollar enfermedades cardiovasculares";
+        document.getElementById("resulConversion").innerHTML = imc + "Obesidad grado I. Riesgo relativo alto para desarrollar enfermedades cardiovasculares";
     } else if (imc >= 30 && imc <= 39.9) {
         document.getElementById("resulConversion").innerHTML = imc + "Obesidad grado II. Riesgo relativo muy alto para el desarrollo de enfermedades cardiovasculares";
     } else {
@@ -154,7 +193,7 @@ function calcMasaCorpoarl(){
 
 //B3
 //Elabora un programa que solicite la medida en Pies y realice la conversión a pulgadas.
-function piesAPulgadas(){
+function piesAPulgadas() {
     let num = prompt("Introduce el número en pies")
     let resultado = num * 12
 
@@ -164,7 +203,7 @@ function piesAPulgadas(){
 //B4
 //El    abora un programa que solicite la medida en pulgadas y realice la conversión a cm y metros.
 
-function pulgadasACm(){
+function pulgadasACm() {
     let num = prompt("Introduce el número en pulgadas")
     let resultado = num * 2.54
 
@@ -173,42 +212,42 @@ function pulgadasACm(){
 
 //B5
 
-function notaMediaClase(){
+function notaMediaClase() {
     let notaCiencia = 7
     let notaHistoria = 5.5
     let notaMatemáticas = 8
-    let notaEducación = 5 
+    let notaEducación = 5
 
     let notas = []
-    
-    notas.push(notaCiencia, notaHistoria, notaMatemáticas,notaEducación)
+
+    notas.push(notaCiencia, notaHistoria, notaMatemáticas, notaEducación)
 
     let sum = 0;
 
-        for (let i = 0; i < notas.length; i += 1) {
-            sum += notas[i];
-        }
-        
-        document.getElementById("resulConversion").innerHTML = sum ;
+    for (let i = 0; i < notas.length; i += 1) {
+        sum += notas[i];
+    }
+
+    document.getElementById("resulConversion").innerHTML = sum;
 
 }
 
 //B6
 //Realiza un programa para calcular salario semanal si el precio/hora es 10, hora extra a 15. El trabajador hora un total de 40 horas semanales y 4 horas extras.
-function calcSalario(){
+function calcSalario() {
     let precioHora = prompt("Dime cuanto te pagan por hora") //10
     let precioHoraExtra = prompt("Dime cuanto te pagan por la hora extra") //15
     let horasContrato = prompt("¿Cuantas horas haces a la semana?") //40
-    let horasExtras= prompt("¿Cuantas horas extras has hecho esta semana?") //4
+    let horasExtras = prompt("¿Cuantas horas extras has hecho esta semana?") //4
 
-    let resultado  = (horasContrato * precioHora) + (horasExtras * precioHoraExtra)
+    let resultado = (horasContrato * precioHora) + (horasExtras * precioHoraExtra)
 
     document.getElementById("resulConversion").innerHTML = resultado
 }
 
 //B7
 //Realizar programa en el que el ordenador “piensa” en un número al azar entre 1-50 y lo muestra por pantalla. Consulta la siguiente web para realizar la operación RANDOM para el número al azar. Usa la función .toFixed() para redondear o para convertirlo a enteros.   
-function numRandom(){
+function numRandom() {
     let numAlAzar = (Math.random() * 50) + 1
     let redondearNum = numAlAzar.toFixed()
 
@@ -217,7 +256,7 @@ function numRandom(){
 
 
 //B8
-function organize2Num(){
+function organize2Num() {
     let num1 = prompt("Introduce un número")
     let num2 = prompt("Otro número un número")
 
@@ -226,10 +265,10 @@ function organize2Num(){
     nums.push(num1, num2)
     var ordenNum = nums.sort()
     document.getElementById("demo").innerHTML = ordenNum[0];
-}    
+}
 
 
-function organize3Num(){
+function organize3Num() {
     let num1 = prompt("Introduce un número")
     let num2 = prompt("Otro número un número")
     let num3 = prompt("Otro número un número")
