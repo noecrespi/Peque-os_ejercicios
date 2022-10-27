@@ -6,10 +6,10 @@ def isPrimo():
 
     for n in range(2,num):
         if (num % n) == 0:
-            print("El numero " +str(num) + " no es primo")
+            print("El numero " + str(num) + " no es primo")
             return False
     
-    print("El numero " +str(num) + " es primo")
+    print("El numero " + str(num) + " es primo")
     return True
 
 isPrimo()
