@@ -23,27 +23,65 @@ function printMeses() {
 //4
 function frase() {
     let palabras = [true, 5, false, "hola", "adios", 2];
-    let totales = [];
-    for (let palabra of palabras) {
-        if(typeof palabra === "string" ){
-            //     palabras.push(words[i])
-            let x = totales.push(palabra[palabra])
-            totales.push(x.length);
-            }
-        
+    let ispalabra = [];
+    let resultado = "";
+    
+    
+    for (i in palabras) {
+        if(typeof palabras[i]=== "string"){
+            ispalabra.push(palabras[i])
+        }
     }
-    console.log(totales);
+    for(i in ispalabra){
+        let icontar = ispalabra[i].length
 
-    let maximo = Math.max.apply(null, totales);
+        while (icontar > resultado.length) {
+            resultado = ispalabra[i]
+        } 
+    } 
+    document.getElementById("resulConversion").innerHTML = resultado;
+}
 
-    for (let elemento of palabras) {
-        if (elemento.length === maximo) {
-            console.log(elemento);
+function fraseMates(){
+    let palabras = [true, 5, false, "hola", "madagascar", "adios", 2];
+    let isNum = [];
+
+    let suma = 0;
+    let resta = 0;
+    let multiplicar = 1;
+    let dividir = 1;
+    
+    
+    for (i in palabras) {
+        if(typeof palabras[i]=== "number"){
+            isNum.push(palabras[i])
         }
     }
 
+    isNum.sort()
+    console.log(isNum)
 
+
+    for(i in isNum){
+        suma = isNum[i] + suma
+        resta = (isNum[i]) - (resta)
+        multiplicar = isNum[i] * multiplicar
+        dividir = isNum[i] / dividir
+    } 
+    
+
+    console.log("suma " + suma)
+    console.log("resta " + resta)
+    console.log("multiplicar " +  multiplicar)
+    console.log("dividir " +  dividir)
+    
+    document.getElementById("resulConversion").innerHTML = "suma " + suma;
+    document.getElementById("resulConversion2").innerHTML = "resta " + resta;
+    document.getElementById("resulConversion3").innerHTML = "multiplicar " +  multiplicar;
+    document.getElementById("resulConversion4").innerHTML = "dividir " +  dividir;
 }
+
+
 
 function whatGigString() {
 
@@ -93,9 +131,32 @@ function whatGigString() {
     //}
 }
 
-function matteoperation() {
-    //let words = document.getElementById("words")
-    let word = [true, 5, false, "hola", "adios", 2]
+function changeBoolean() {
+    let palabras = [true, 5, false, "hola", "madagascar", "adios", 2];
+    let isBoolean = [];
+    
+    // mete los booleanos en el array isBoolean
+    for (i in palabras) {
+        if(typeof palabras[i]=== "boolean"){
+            isBoolean.push(palabras[i])
+        }
+    }
+    
+    console.log(isBoolean)
+
+
+    // Cambia el valor del booleano por su contrario
+    for(i in isBoolean) {
+        if(isBoolean[i] === false){
+            isBoolean[i] = true
+        } 
+        else {
+            isBoolean[i] = false
+        }
+    } 
+    
+    console.log(isBoolean)
+    document.getElementById("resulConversion").innerHTML = isBoolean;
 
 
 }
@@ -120,7 +181,7 @@ function condiciones() {
 //6
 //El cálculo de la letra del Documento Nacional de Identidad (DNI)
 function calcLetraDni() {
-    let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
+    const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
         'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
     let numDNI = prompt("Escribe los numeros de tu DNI")
