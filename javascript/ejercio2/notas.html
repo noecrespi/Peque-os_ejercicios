@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="notas()">Calcula la nota media</button>
+    <p id="notas"></p>
+</body>
+<script>
+
+    // Realiza un programa que en función de la nota que introduzcamos, nos muestre por pantalla la nota equivalente en letras del estilo Notable, Insuficiente, ... A su vez, este programa debe almacenar hasta 5 notas y luego mostrar la media tanto con numero como con letras.
+
+    
+    function notas(){
+        var notas = []
+        var totalNotas = 0
+        var media = 0
+        var listNotas = ""
+        
+
+        let pedirNotas = true
+
+        while (pedirNotas && notas.length < 5) {
+            var nota = prompt("Introduce la nota");
+            console.log("dentro del while")
+            nota = parseInt(nota)
+
+            // if (typeof nota === "number" && nota >= 0 && nota <= 10 && notas.length < 5){
+            if (nota >= 0 && nota <= 10 ){
+                //document.getElementById("notas").innerHTML = nota;
+                // console.log(nota)
+                notas.push(nota)
+                totalNotas += nota
+                if (nota >= 0 && nota < 5){
+                    alert("Insuficiente");
+                }else if (nota >= 5 && nota < 6){
+                    alert("Suficiente");
+                }else if (nota >= 6 && nota < 7){
+                    alert("Bien");
+                }else if (nota >= 7 && nota < 9){
+                    alert("Notable");
+                }else if (nota >= 9 && nota <= 10){
+                    alert("Sobresaliente");
+                }else{
+                    alert("Introduce una nota entre 0 y 10");
+                }
+            } else if (notas.length === 5){
+                // console.log("dentro del else if")
+                pedirNotas = false
+            } else {
+                nota = prompt("La nota tiene que ser un número entre 0 y 10\n Vuelve a probar")
+                //console.log("dentro del else")
+            }
+        }
+        
+        console.log(notas)
+        // hace la media de las notas
+        media = totalNotas / notas.length
+        console.log(media)
+
+        
+        
+
+        // dice la nota en letras
+        if (media >= 0 && media < 5){
+            alert("Insuficiente");
+        }else if (media >= 5 && media < 6){
+            alert("Suficiente");
+        }else if (media >= 6 && media < 7){
+            alert("Bien");
+        }else if (media >= 7 && media < 9){
+            alert("Notable");
+        }else if (media >= 9 && media <= 10){
+            alert("Sobresaliente");
+        }else{
+            alert("Introduce una nota entre 0 y 10");
+        }
+
+        document.getElementById("notas").innerHTML = "Las notas son: " + notas;
+        document.getElementById("notas").innerHTML = "nota media: " + media;
+
+}
+
+</script>
+</html>
