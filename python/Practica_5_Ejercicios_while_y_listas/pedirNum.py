@@ -17,6 +17,4 @@ def pedirNum():
     print("Los números dados por el usuario son " + str(lista))
 
 
-
-
 pedirNum()
