@@ -34,7 +34,7 @@ El archivo que contiene estafunción se llama ``` pedirNum ``` .
 
 El archivo que contiene estafunción se llama ``` notasAlum ``` .
 
-Escribe un programa que te pida dos números, de manera que el segundo sea mayor que el primero. El programa termina escribiendo los dos números tal y como se pide:
+**Escribe un programa que te pida dos números, de manera que el segundo sea mayor que el primero. El programa termina escribiendo los dos números tal y como se pide:**
 
     Escribe un número: 6
     Escribe un número mayor que 6: 6
@@ -137,6 +137,7 @@ Nota: La lista en la que se guardan los nombres y notas tiene esta estructura [[
 
 El archivo que contiene estafunción se llama ``` notasAlum ```.
 
+
 **Escribir un programa para jugar a adivinar un número (el ordenador "piensa" el número y el usuario lo ha de adivinar). El programa empieza pidiendo entre qué números está el número a adivinar, se "inventa" un número al azar y luego el usuario va probando valores. El programa va decidiendo si son demasiado grandes o pequeños. pista:**
 
 ```
@@ -184,6 +185,11 @@ Mejoras (opcionales):
 - Que el programa detecte "trampas", por ejemplo, si cuando dices "25" le decimos "mayor" y al decir "26" le decimos "menor", el programa debe decir que estamos haciendo trampas y debe dejar de jugar con nosotros.
 
 El archivo que contiene estafunción se llama ``` adivinaNum ```.
+
+**Desarrolla de nuevo el ejercicio de la práctica anterior de los números primos, con while. Reflexiona y escribe en el propio programa en forma de comentario, qué opción es mejor y por qué.**
+
+El archivo que contiene estafunción se llama ``` isPrimo ```.
+
 
 **Desarrolla un programa que tenga las siguientes características:**
 - Piensa en un problema que requiera para su resolución el uso de sentencias repetitivas.
