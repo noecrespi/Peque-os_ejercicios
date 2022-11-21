@@ -162,6 +162,8 @@ secreto = random.randint (mínimo, máximo)
     Demasiado grande! Volver a probar: 27
     Correcto! Lo has intentado 3 veces.
 
+![](img/numMaquina.jpg)
+
 El archivo que contiene estafunción se llama ``` numMaquina ```.
 
 **Escribir un programa para jugar a adivinar un número (el usuario piensa un número y el programa lo ha de adivinar). El programa empieza pidiendo entre qué números está el número a adivinar y luego intenta adivinar de qué número se trata. El usuario va diciendo si el número que ha dicho el programa es menor, mayor o igual al que se ha buscado.**
@@ -184,9 +186,13 @@ Mejoras (opcionales):
 
 - Que el programa detecte "trampas", por ejemplo, si cuando dices "25" le decimos "mayor" y al decir "26" le decimos "menor", el programa debe decir que estamos haciendo trampas y debe dejar de jugar con nosotros.
 
+![](img/IMG_7295%202.jpg)
+
 El archivo que contiene estafunción se llama ``` adivinaNum ```.
 
 **Desarrolla de nuevo el ejercicio de la práctica anterior de los números primos, con while. Reflexiona y escribe en el propio programa en forma de comentario, qué opción es mejor y por qué.**
+
+![](img/1.png)
 
 El archivo que contiene estafunción se llama ``` isPrimo ```.
 
@@ -206,6 +212,8 @@ Justifica en el propio programa porque una opción es adecuada y la otra no.
     Por lo que supuestamente al ejecutar el `for` es más rapido que el `while` ya que el for tiene/sabe un inicio y un fin, mientras el while tienen un inicio pero no se sabe cuando será su fin por lo que puede tardar infinito.
 
     O sea, los dos son eficientes simplemente tienen finalidades diferentes. 
+
+![](img/adivinanza.jpg)
 
 El archivo que contiene estafunción se llama ``` adivinanza ```.
 
