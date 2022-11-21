@@ -4,18 +4,27 @@
 # En cambio el while es más complicado y más lento de ejecutar.
 
 def isPrimo():
+    listaPrimos = True
 
-    
-    nums = True
-    
-    while nums == True:
+
+    while listaPrimos == True:
+        primo = True
         num  = int(input("Introduce un número: "))
+        
         if num == 0:
-            nums = False
+            return False
         else: 
             for n in range(2,num):
                 if (num % n) == 0:
-                    print("El numero " + str(num) + " no es primo")
-                    return False
+                    primo = False
+            
+            if primo == True:
+                print("El numero " + str(num) + " es primo")
+            else:
+                print("El numero " + str(num) + " no es primo")
+            
+
 
 isPrimo()
+
+
