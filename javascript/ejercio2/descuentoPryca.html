@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Descuentos en el supermercado Pryca</h1>
+    <h3>Productos</h3>
+    <ul>
+        <li>Los 3 primeros productos tienen un 20%</li>
+        <li>Los tres sigientes productos después del los tres primeros tienen un 10%</li>
+        <li>El resto de productos no tiene ningún descuento</li>
+    </ul>
+    <button onclick="descuentoPryca()">Iniciar</button>
+</body>
+<script>
+
+    // El primer descuento es de 20%, y se aplica sobre los primeros n productos ingresados. Luego,cada descuento es la mitad del anterior, y es aplicado sobre los siguientes n productos.
+
+    // Por ejemplo, si n = 3 y la compra es de 11 productos, entonces los tres primeros tienen 20% de descuento, los tres siguientes 10%, los tres siguientes 5%, y los dos últimos no tienen descuento.
+
+    // Escriba un programa que pida al usuario ingresar n y la cantidad de productos, y luego los precios de cada producto. Al final, el programa debe entregar el precio total, el descuento total y el precio final después de aplicar el descuento.
+
+    // Si al aplicar el descuento el precio queda con decimales, redondee el valor hacia abajo.
+
+    function descuentoPryca(){
+
+        var numProductos = prompt("Ingrese el número de productos");
+
+        var precios = {};
+
+        inprodutos = true
+        console.log(precios.length);
+
+        if (numProductos > 0) {
+            // pedir los precios de los productos
+            while (inprodutos){
+                for (let i = 1; i <= numProductos; i++) {
+                    precios[i] = prompt("Ingrese el precio del producto " + (i));
+                    // console.log(precios);
+                    // console.log (i)
+                    if (i == numProductos){
+                        inprodutos = false;
+                    }
+                }
+            }
+        }
+
+
+        // calcular el descuento
+        var descuento = 0;
+        var total = 0;
+        var porPagar = 0;
+
+        // calcular el total
+        for (let i = 1; i <= numProductos; i++) {
+            total += parseInt((precios[i]));
+            // descuento del 20%
+            if (i <= 3) {
+                descuento += parseInt(precios[i]) * 0.2;
+            // descuento del 10%
+            } else if (i <= 6) {
+                descuento += parseInt(precios[i]) * 0.1;
+            // descuento del 5%
+            } else if (i <= 9 || i <= 12) {
+                descuento += parseInt(precios[i]) * 0.05;
+            // no se aplica el descuento
+            } else{
+                descuesto += 0;
+            }
+        }
+
+        // monstramos solo dos decimales en el descuento
+        descuento = descuento.toFixed(2);
+
+        // calculamos el precio final + descuento + total
+        let pagar = total - descuento;
+        alert("El total sin descuento es de: " + total + "\nEl descuento es de: " + descuento + "\nEl total a pagar es de: " + pagar);
+
+    }
+</script>
+
+</html>
