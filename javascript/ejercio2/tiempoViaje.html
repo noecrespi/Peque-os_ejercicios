@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calcula el total de horas del viaje</h2>
+
+    <button onclick="tiempoViaje()">Iniciar</button>
+</body>
+
+<script>
+
+    // Un viajero desea saber cuánto tiempo tomó un viaje que realizó. Él tiene la duración en minutos de cada uno de los tramos del viaje.
+
+    // Desarrolla un programa que permita ingresar los tiempos de viaje de los tramos y entregue como resultado el tiempo total de viaje en formato horas:minutos
+
+    // El programa deja de pedir tiempos de viaje cuando se ingresa un 0.
+
+    // Duración tramo: 15
+    // Duración tramo: 30
+    // Duración tramo: 87  
+    // Duración tramo: 0
+    // Tiempo total de viaje: 2:12horas
+
+    function tiempoViaje(){
+        //let duracionTramo = parseInt(prompt("Duración tramo: "));
+        let minutos = 0;
+        let horas = 0;
+
+        
+        isNumber = true
+
+        while( isNumber){
+            console.log("dentro del while")
+            let duracionTramo = prompt("Duración tramo: ")
+            duracionTramo = parseInt(duracionTramo)
+            if (duracionTramo == 0){
+                horas = Math.floor(minutos/60);
+                minutos = minutos%60;
+                alert(`Tiempo total de viaje: ${horas}:${minutos} horas`);
+                isNumber = false;
+            } else{
+                minutos += duracionTramo;
+                isNumber = true
+            }
+        }
+
+    }
+
+</script>
+</html>
