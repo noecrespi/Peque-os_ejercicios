@@ -45,6 +45,17 @@ El archivo que contiene estafunción se llama ``` isPalindromo ```.
 
 **Escribe un programa que le pida al usuario si quiere calcular si un número es primo deberéis utilizar for o con while, por tanto, habrá dos funciones que se caracterizan por hacer ese mismo cálculo de una manera (con for y sin breaks), o de otra (con while). Ambas funciones devolverán true (si es primo) o false (si no es primo). El programa principal informará del resultado. Además, como mejora puedes calcular el tiempo que tarda en encontrar la solución de una manera u otra. Comentario: aprovecha el código que tienes ya creado.**
 
+![](img/for.png)
+###### programa que calcula si un número es primo con for
+
+
+![](img/while.png)
+###### programa que calcula si un número es primo con while
+
+El archivo que contiene estafunción se llama ``` isPrimo ```.
+
+
+
 **Aprovechando el potencial de los diccionarios, escribe un programa que llame a un procedimiento, que recibe como parámetro la fecha en números y devuelve la fecha  con el nombre del mes. Comentario: no es necesario validar si la es correcta, damos por hecho que lo será.** 
 
     Introduce una fecha en formato dd/mm/aaaa: 02/11/2019
@@ -55,4 +66,4 @@ El archivo que contiene estafunción se llama ``` fecha ```.
 
 **Desarrolla un programa, que nos sirva para gestionar nuestros contactos (la información a gestionar será el teléfono, nombre, apellido1, apellido2 y correo electrónico. El programa tendrá un menú, con las siguientes opciones: añadir contacto, consultar contacto a partir de la clave, consultar todos los contactos y eliminar contacto. Aprovecha lo que has aprendido hasta el momento (diccionarios, funciones, procedimientos…).**
 
-El archivo que contiene estafunción se llama ``` 5 ```.
+El archivo que contiene estafunción se llama ``` agenda ```.
