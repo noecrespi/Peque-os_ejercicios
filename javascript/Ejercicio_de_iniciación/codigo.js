@@ -1,4 +1,8 @@
-
+    // Duración tramo: 15
+    // Duración tramo: 30
+    // Duración tramo: 87  
+    // Duración tramo: 0
+    // Tiempo total de viaje: 2:12horas
 var mensaje = "Hola Mundo! \nQué facil es incluir 'comillas simples' y \"comillas dobles\" "
 
 // Todo el código JavaScript se encuentre en un archivo externo llamado
@@ -14,7 +18,7 @@ alert("Soy el primer script")
 //3
 // imprime los meses del año en un alert
 function printMeses() {
-    let meses = ["Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre"]
+    const meses = ["Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre"]
 
     alert(meses)
 }
