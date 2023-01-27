@@ -1,0 +1,62 @@
+<!-- Añade un párrafo <p> con el texto “Hola Mundo” y una imagen <img> con el enlace http://placekitten.com/g/200/300 usando DOM al ejercicioB2.html.
+
+Recuerda que para añadir el atributo (por ejemplo el src) a un elemento debes hacerlo de la siguiente forma:
+
+    nodoElemento.src = “http://prueba.com” -->
+
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title></title>
+    <!-- <style>
+        body {
+            background-color: white;
+        }
+        
+        h2 {
+            font: bold italic 28pt Verdana;
+            color: red;
+        }
+    </style> -->
+
+</head>
+
+<body onLoad="estilos()">
+    <center>
+        <h2 id="dato">DOM</h2>
+    <center>
+</body>
+
+
+
+<script language="JavaScript">
+
+    function estilos() // Usando DOM
+    {
+        // estidlo de fondo y lettra de título
+        document.body.style.background = "white";
+        msj = document.getElementById("dato");
+        msj.style.font = "bold italic 28pt Verdana";
+        msj.style.color = "red";
+        
+        // parrafo
+        var parrafo = document.createElement("p");
+        var texto = document.createTextNode("Hola Mundo");
+        parrafo.appendChild(texto);
+        document.body.appendChild(parrafo);
+
+        // imagen
+        var imagen = document.createElement("img"); 
+        imagen.src = "http://placekitten.com/g/200/300";
+        document.body.appendChild(imagen);
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,123 @@
+<!-- A partir de la página web proporcionada (ejercicio11.html) y utilizando las funciones DOM, mostrar por pantalla la siguiente información:
+	1. Número de enlaces de la página
+	2. Dirección a la que enlaza el penúltimo enlace
+	3. Numero de enlaces que enlazan a http://prueba
+	4. Número de enlaces del tercer párrafo -->
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 11 - DOM b�sico</title>
+
+</head>
+
+<body>
+
+	<p>Lorem ipsum dolor sit amet, <a href="http://prueba">consectetuer adipiscing elit</a>. Sed mattis enim vitae orci.
+		Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien
+		nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+		porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+		faucibus ut, rhoncus non, mi. <a href="http://prueba2">Fusce porta</a>. Duis pellentesque, felis eu adipiscing
+		ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer
+		adipiscing elit. Duis scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec
+		arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer
+		lacus. Vestibulum venenatis erat eu odio. Praesent id metus.</p>
+
+	<p>Aenean at nisl. Maecenas egestas dapibus odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+		posuere cubilia Curae; Proin consequat auctor diam. <a href="http://prueba">Ut bibendum blandit est</a>.
+		Curabitur vestibulum. Nunc malesuada porttitor sapien. Aenean a lacus et metus venenatis porta. Suspendisse
+		cursus, sem non dapibus tincidunt, lorem magna porttitor felis, id sodales dolor dolor sed urna. Sed rutrum
+		nulla vitae tellus. Sed quis eros nec lectus tempor lacinia. Aliquam nec lectus nec neque aliquet dictum. Etiam
+		<a href="http://prueba3">consequat sem quis massa</a>. Donec aliquam euismod diam. In magna massa, mattis id,
+		pellentesque sit amet, porta sit amet, lectus. Curabitur posuere. Aliquam in elit. Fusce condimentum, arcu in
+		scelerisque lobortis, ante arcu scelerisque mi, at cursus mi risus sed tellus.
+	</p>
+
+	<p>Donec sagittis, nibh nec ullamcorper tristique, pede velit feugiat massa, at sollicitudin justo tellus vitae
+		justo. Vestibulum aliquet, nulla sit amet imperdiet suscipit, nunc erat laoreet est, a <a
+			href="http://prueba">aliquam leo odio sed sem</a>. Quisque eget eros vehicula diam euismod tristique. Ut
+		dui. Donec in metus sed risus laoreet sollicitudin. Proin et nisi non arcu sodales hendrerit. In sem. Cras id
+		augue eu lorem dictum interdum. Donec pretium. Proin <a href="http://prueba4">egestas</a> adipiscing ligula.
+		Duis iaculis laoreet turpis. Mauris mollis est sit amet diam. Curabitur hendrerit, eros quis malesuada
+		tristique, ipsum odio euismod tortor, a vestibulum nisl mi at odio. <a href="http://prueba5">Sed non lectus non
+			est pellentesque</a> auctor.</p>
+
+	<script type="text/javascript">
+		//<![CDATA[
+		try { (function (a) { var b = "http://", c = "librosweb.es", d = "/cdn-cgi/cl/", e = "img.gif", f = new a; f.src = [b, c, d, e].join("") })(Image) } catch (e) { }
+		//]]>
+
+		window.onload = function () {
+
+			var enlaces = document.getElementsByTagName("a");
+			//cuenta todos los enlaces de la pagina
+			var cuentaEnlaces = enlaces.length;
+			// lista de enlaces
+			var listaEnlaces = [];
+			for(var i = 0; i < enlaces.length; i++){
+				listaEnlaces.push(enlaces[i].href);
+			}
+			console.log(listaEnlaces);
+			
+			// Numero de enlaces de la pagina
+			var verEnlaces = document.createElement("p");
+			// Imprimir en pantalla
+			var textoEnlaces = document.createTextNode("El numero de enlaces de la pagina es: " + cuentaEnlaces);
+			verEnlaces.appendChild(textoEnlaces);
+			document.body.appendChild(verEnlaces);
+
+			// Direccion del penultimo enlace
+			var verPenultimo = document.createElement("p");
+			var peultimoEnlace = listaEnlaces[listaEnlaces.length - 2];
+			// Imprimir en pantalla
+			var textoPenultimo = document.createTextNode("La direccion del penultimo enlace es: " + peultimoEnlace);
+			verPenultimo.appendChild(textoPenultimo);
+			document.body.appendChild(verPenultimo);
+
+			// Numero de enlaces que apuntan a http://prueba
+			var verPrueba = document.createElement("p");
+			var cuentaPrueba = 0;
+			for(var i = 0; i < listaEnlaces.length; i++){
+				if(listaEnlaces[i] == "http://prueba"){
+					cuentaPrueba++;
+				}
+			}
+			// Imprimir en pantalla
+			var textoPrueba = document.createTextNode("El numero de enlaces que apuntan a http://prueba es: " + cuentaPrueba);
+			verPrueba.appendChild(textoPrueba);
+			document.body.appendChild(verPrueba);
+			
+			var cuentaPrueba = 0;
+			var verPrueba2 = document.createElement("p");
+			for(var i = 0; i < listaEnlaces.length; i++){
+				if(listaEnlaces[i] == "http://prueba/"){
+					cuentaPrueba++;
+				}
+			}
+			// Imprimir en pantalla
+			var textoPrueba2 = document.createTextNode("El numero de enlaces que apuntan a http://prueba/ es: " + cuentaPrueba);
+			verPrueba2.appendChild(textoPrueba2);
+			verPrueba2.appendChild(textoPrueba2);
+			document.body.appendChild(verPrueba2);
+
+			// Numero de enlaces del tercer p�rrafo
+			var parrafo3 = document.getElementsByTagName("p")[2];
+			var enlacesParrafo3 = parrafo3.getElementsByTagName("a");
+			var cuentaEnlacesParrafo3 = enlacesParrafo3.length;
+			//Imprimir en pantalla
+			var verEnlacesParrafo3 = document.createElement("p");
+			var textoEnlacesParrafo3 = document.createTextNode("El numero de enlaces del tercer parrafo es: " + cuentaEnlacesParrafo3);
+			verEnlacesParrafo3.appendChild(textoEnlacesParrafo3);
+			document.body.appendChild(verEnlacesParrafo3);
+			
+
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!-- Edita el código proporcionado en ejercicioB4.html y realiza los siguientes pasos:
+  1. Añade la etiqueta <script> al final del cuerpo del HMTL
+  2. Cambia el estilo de letra a "Arial, sans-serif"
+  3. Añade la información a los <spans> con tu propia información
+  4. Añade a cada <li> una clase llamada class=”listitem” de forma que quede de
+  color roja toda la lista.
+  5. Crea un elemento <img> con el atributo src con una URL de una imagen
+  
+Añádela al código HTML. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mi</title>
+  <style>
+    .listitem {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Sobre mi</h1>
+
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Hobby: <span id="hobby"></span>
+    <li>Ciudad: <span id="ciudad"></span>
+  </ul>
+
+</body>
+
+<script>
+  // Cambia el estilo de letra a "Arial, sans-serif"
+  var estilo = document.getElementsByTagName("body");
+  estilo[0].style.fontFamily = "Arial, sans-serif";
+
+  // Añadir información a <span>
+  var nickname = document.getElementById("nickname");
+  nickname.innerHTML = "Noelia";
+
+  var hobby = document.getElementById("hobby");
+  hobby.innerHTML = "Dibujar";
+
+  var ciudad = document.getElementById("ciudad");
+  ciudad.innerHTML = "Palma de Mallorca";
+
+  //Añade a cada <li> una clase llamada class=”listitem” de forma que quede de color roja toda la lista.
+
+  // Opción 1
+  var lista = document.getElementsByTagName("li");
+  for (var i = 0; i < lista.length; i++) {
+    lista[i].className = "listitem";
+  }
+
+  var colorLista = document.getElementsByClassName("listitem");
+  colorLista[0].style.color = "red";
+
+  // Opción 2
+  // var lista2 = document.getElementsByTagName("ul");
+  // lista2[0].className = "listitem";
+  // var colorLista = document.getElementsByClassName("listitem");
+  // colorLista[0].style.color = "red";
+
+
+  // Cear un elemento <img> y añadir la url de la imagen
+  var imagen = document.createElement("img");
+  imagen.src = " https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2022/03/gato-botas-ultimo-deseo-2649871.jpg?itok=mgMGhFC8 "
+  imagen.style.width = "400px";
+  document.body.appendChild(imagen);
+  
+
+
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<!-- A partir del código proporcionado en ejercicioB3.html, observa que realiza el código y añádele el código DOM necesario para que también cambie el color de fondo de pantalla de forma aleatoria cada vez que aumentamos el texto. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> prog09.html </title>
+  <style>
+    body{
+      background-color: rgb(83, 83, 163);
+    }
+  </style>
+</head>
+
+<body onLoad="estilos()">
+  <h2 align="center" id="dato">BIENVENIDO!</h2>
+</body>
+
+<script language="JavaScript">
+  function estilos() // CSS v�a DOM
+  {
+    var tam = 12; // font size en pt
+    document.body.style.background = "blue";
+    msj = document.getElementById("dato");
+    msj.style.color = "yellow";
+    // aumentar el tamaño de la letra y cambiar el color de fondo de forma aleatoria
+    while (confirm("Letra m�s grande?")) {
+      tam += 4;
+      msj.style.font = "bold italic " + tam + "pt Verdana";
+      // cambiar el color de fondo de forma aleatoria
+      //numero aleatorio entre 0 y 16777215
+      //.toString(16) convierte el numero a hexadecimal
+      var color = Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.background = "#" + color;
+    }
+  }
+</script>
+</html>
