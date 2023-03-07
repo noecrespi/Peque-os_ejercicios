@@ -6,26 +6,21 @@ import java.util.Scanner;
 // . Suponga que siempre faltará una letra en la matriz.
 public class MissLetter {
 
-    static String[] abecedario = {
-            "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-            "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-    };
     public static void cearch(String letras){
         // convertir las letras en minusculas
         String minusculas = letras.toLowerCase();
+        String respuesta = "";
 
-        for(int i = 0; i < abecedario.length; i++){
-            for(int j =0; j < minusculas.length(); j++){
-                //coger la primera letra de la palabra
-
-                // si la letra del abecedario es igual a la letra de la palabra
-                if(!minusculas.contains(abecedario[i])){
-                    System.out.println("La letra que falta es: " + abecedario[i]);
-                    break;
-                }
+        for (int i = 0; i < minusculas.length() - 1; i++){
+            // si la letra es diferente a la siguiente letra
+            // porque se añade menos uno
+            if (minusculas.charAt(i) != minusculas.charAt(i + 1) - 1){
+                // la letra que falta es la siguiente letra
+                respuesta = String.valueOf((char) (minusculas.charAt(i) + 1));
+                break;
             }
         }
-
+        System.out.println("La letra que falta es: " + respuesta);
 
 
     }
