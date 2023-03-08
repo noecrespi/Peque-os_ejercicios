@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98675b82-6856-4e19-8d77-226a755fe1bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Countcurrents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/whatMoreLarge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicios_Arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios_Arrays/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejemplo_java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/practica_1/ascii.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/practica_1/ascii.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/practica_1/ascii.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/practica_1/ascii.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preparacon_examen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../preparacon_examen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javascript/Ejercicio_de_iniciación/ejercio2/ejercicio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javascript/ejercicio 3/ejercico1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../javascript/ejercicio 3/ejercico1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../javascript/ejercio2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../javascript/ejercio2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/Practica_5_Ejercicios_while_y_listas/prurba.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Practica_5_Ejercicios_while_y_listas/prurba.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/Practica_6A_Ejercicios_funciones,_procedimientos,_cadenas_y_diccionarios/isPrimo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Practica_6A_Ejercicios_funciones,_procedimientos,_cadenas_y_diccionarios/isPrimo.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Mj8cf5Jxe9judXlFqs6LnHfVk4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98675b82-6856-4e19-8d77-226a755fe1bd" name="Changes" comment="" />
+      <created>1678269711610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678269711610</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Countcurrents.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Countcurrents.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Countcurrents.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
