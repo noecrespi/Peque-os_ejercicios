@@ -1,5 +1,5 @@
 package org.edu.programacion;
-git
+
 // 4 abstract: no se puede instanciar
 public abstract class Cuenta {
 
