@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b406b3-cb09-41c4-b39d-e60b0e480dd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Examamen_Java/NIF/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DNI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/src/main/java/org/example/ValidarDNI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/target/classes/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DNI/target/classes/org/example/ValidarDNI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicios_Arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios_Arrays/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicios_Arrays/target/classes/org/example/CreateBigNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios_Arrays/target/classes/org/example/CreateBigNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicios_Arrays/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios_Arrays/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicios_Arrays/target/classes/org/example/MissLetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios_Arrays/target/classes/org/example/MissLetter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicios_Hashmaps/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios_Hashmaps/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Strings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Strings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Strings/target/classes/org/example/Countcurrents.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Strings/target/classes/org/example/Countcurrents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Strings/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Strings/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Strings/target/classes/org/example/whatMoreLarge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Strings/target/classes/org/example/whatMoreLarge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cuenta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cuenta/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejemplo_java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/practica_1/ascii.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/src/main/java/org/example/practica_1/ascii.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/practica_1/ascii.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejemplo_java/target/classes/org/example/practica_1/ascii.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preparacon_examen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../preparacon_examen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preparacon_examen/target/classes/org/example/Main$ArrayComputers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../preparacon_examen/target/classes/org/example/Main$ArrayComputers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preparacon_examen/target/classes/org/example/Main$Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../preparacon_examen/target/classes/org/example/Main$Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preparacon_examen/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../preparacon_examen/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javascript/Ejercicio_de_iniciación/ejercio2/ejercicio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javascript/ejercicio 3/ejercico1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../javascript/ejercicio 3/ejercico1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javascript/ejercio2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../javascript/ejercio2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Practica_5_Ejercicios_while_y_listas/prurba.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Practica_5_Ejercicios_while_y_listas/prurba.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Practica_6A_Ejercicios_funciones,_procedimientos,_cadenas_y_diccionarios/isPrimo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Practica_6A_Ejercicios_funciones,_procedimientos,_cadenas_y_diccionarios/isPrimo.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="50b406b3-cb09-41c4-b39d-e60b0e480dd2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
