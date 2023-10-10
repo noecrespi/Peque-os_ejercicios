@@ -1,0 +1,18 @@
+
+.img-pattern {
+    /* imagen de fondo de un archivo de imagen */
+    background-image: url("img/pattern.jpg");
+    
+    /* Establecer la propiedad background-size para controlar el tamaño de la imagen */
+    background-size:auto;
+    /* Otra opción puede ser "contain" */
+
+    /* Establecer el color de fondo como respaldo si la imagen no se carga o no se muestra completamente */
+    background-color: #dcc89c; /* Un color de fondo de respaldo */
+    
+    padding: 20px;
+}
+
+hr {
+    border:1px dashed;
+}
