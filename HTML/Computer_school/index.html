@@ -10,25 +10,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container">
     <!-- Cabecera -->
-    <header>
+    <header class="head">
         <!-- logo -->
+        <h1>Computer school</h1>
+        <p>Best Computer school ever!</p>
         <div>
-            <img src="img/logo.png" alt="Logo">
+            <img src="img/logo.png" alt="Logo" class="logo">
         </div>
-        <!-- Title -->
-        <div>
-            <h1>COMPUTER SCHOOL</h1>
-            <h3>Best Computer school ever!</h3>
-        </div>
+
+
     </header>
-    <hr>
+    <hr class="solid-line">
 
     <!-- Body -->
     <main>
         <!-- menu or links -->
-        <section>
+        <section class="section-menu">
             <ul>
                 <li>Link 1</li>
                 <li>Link 2</li>
@@ -39,68 +38,83 @@
         <hr>
 
         <!-- Pattern -->
-        <section class="img-pattern"></section>
+        <section class="section-img-pattern"></section>
         <hr>
 
         <!-- Image computer -->
-        <section>
+        <section class="section-img">
             <img src="img/fotofrontal.jpg" alt="Frontal">
         </section>
         <hr>
 
         <!-- Table the Grades -->
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>NIF</th>
-                        <th>Nota</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <section class="section-grades">
+            <div>
+                <table>
+                    <caption>The Grades</caption>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>NIF</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                    <!-- 1 linne -->
-                    <tr>
-                        <th>Maria</th>
-                        <th>1</th>
-                        <th>10</th>
-                    </tr>
+                        <!-- 1 linne -->
+                        <tr>
+                            <td>Maria</td>
+                            <td>1</td>
+                            <td>10</td>
+                        </tr>
 
-                    <!-- 2 linne -->
-                    <tr>
-                        <th>Joan</th>
-                        <th>2</th>
-                        <th>10</th>
-                    </tr>
+                        <!-- 2 linne -->
+                        <tr>
+                            <td>Joan</td>
+                            <td>2</td>
+                            <td>10</td>
+                        </tr>
 
-                    <!-- 3 linne -->
-                    <tr>
-                        <th>Lluis</th>
-                        <th>3</th>
-                        <th>10</th>
-                    </tr>
+                        <!-- 3 linne -->
+                        <tr>
+                            <td>Lluis</td>
+                            <td>3</td>
+                            <td>10</td>
+                        </tr>
 
-                    <!-- 4 linne -->
-                    <tr>
-                        <th>Pepa</th>
-                        <th>4</th>
-                        <th>10</th>
-                    </tr>
-                </tbody>
-            </table>
+                        <!-- 4 linne -->
+                        <tr>
+                            <td>Pepa</td>
+                            <td>4</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <hr>
 
         <!-- img programming languages -->
-        <section>
+        <section class="section-table-language">
             <table>
                 <tbody>
                     <tr>
-                        <th> <img src="img/javascript.png" alt="Js"> </th>
-                        <th> <img src="img/angular.png" alt="Angular"> </th>
-                        <th> <img src="img/php.png" alt="Php"> </th>
-                        <th> <img src="img/html5.png" alt="Html"> </th>
+                        <th class="print-line">
+                            <img src="img/javascript.png" alt="Js">
+                            <p>Javascript</p>
+                        </th>
+                        <th>
+                            <img src="img/angular.png" alt="Angular">
+                            <p>ANGULAR</p>
+                        </th>
+                        <th>
+                            <img src="img/php.png" alt="Php">
+                            <p>PHP</p>
+                        </th>
+                        <th>
+                            <img src="img/html5.png" alt="Html">
+                            <p>HTML5</p>
+                        </th>
                     </tr>
                 </tbody>
             </table>
@@ -111,13 +125,14 @@
 
     <!-- Pie de página -->
     <footer>
-        <div>
+        <div class="order-text">
             <div>
                 <p>©cifpbmoll.eu</p>
             </div>
-            <div>
-                <p>DESING OF WEB INTERFACES</p>
+            <div class="bottom-text">
+                <p class="footer-bottom">DESING OF WEB INTERFACES</p>
             </div>
+
         </div>
     </footer>
 </body>
