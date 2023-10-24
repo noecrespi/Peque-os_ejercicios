@@ -6,6 +6,8 @@ const scss = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 // implements minimitzajs
 const cleanJS = require('gulp-uglify');
+// implements concat
+const concat = require('gulp-concat');
 
 // The `clean` function is not exported so it can be considered a private task.
 // It can still be used within the `series()` composition.
@@ -48,6 +50,13 @@ function minimitzajs() {
         .pipe(dest('dist/js/'));
 }
 
+// concat -> tasck 5
+function concatcss(){
+    return src('dist/css/*.css')
+        .pipe(concat('all.css'))
+        .pipe(dest('dist/css/'));
+}
+
 
 //EXPORTS 
 exports.build = build;
@@ -56,3 +65,4 @@ exports.compilaSCSS = compilaSCSS;
 exports.watcher = watcher;
 exports.minimitzaCSS = minimitzaCSS;
 exports.minimitzajs = minimitzajs;
+exports.concatcss = concatcss;  
