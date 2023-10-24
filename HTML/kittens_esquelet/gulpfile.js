@@ -4,6 +4,8 @@ const { series, src, dest } = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
 // implements minimitzacss
 const cleanCSS = require('gulp-clean-css');
+// implements minimitzajs
+const cleanJS = require('gulp-uglify');
 
 // The `clean` function is not exported so it can be considered a private task.
 // It can still be used within the `series()` composition.
@@ -27,7 +29,7 @@ function compilaSCSS() {
 }
 
 // WHATCH -> tack 2
-function watcher(){
+function watcher() {
     watch('sass/*.scss', compilaSCSS);
     watch('sass/partials/*.scss', compilaSCSS);
 }
@@ -39,6 +41,13 @@ function minimitzaCSS() {
         .pipe(dest('dist/css/'));
 }
 
+// minimitzajs -> tasck 4
+function minimitzajs() {
+    return src('js/*.js')
+        .pipe(cleanJS())
+        .pipe(dest('dist/js/'));
+}
+
 
 //EXPORTS 
 exports.build = build;
@@ -46,3 +55,4 @@ exports.default = series(clean, build);
 exports.compilaSCSS = compilaSCSS;
 exports.watcher = watcher;
 exports.minimitzaCSS = minimitzaCSS;
+exports.minimitzajs = minimitzajs;
