@@ -2,6 +2,7 @@ const { series, src, dest } = require('gulp');
 
 // implements sass
 const scss = require('gulp-sass')(require('sass'));
+// implements 
 
 // The `clean` function is not exported so it can be considered a private task.
 // It can still be used within the `series()` composition.
@@ -17,14 +18,22 @@ function build(cb) {
     cb();
 }
 
-//Sass task
-function compilaSCSS(){
+//Sass task -> tack 1
+function compilaSCSS() {
     return src('sass/*.scss')
         .pipe(scss())
         .pipe(dest('css/'))
 }
 
+//WHATCH -> tack 2
+function watcher(){
+    watch('sass/*.scss', compilaSCSS);
+    watch('sass/partials/*.scss', compilaSCSS);
+}
+
+
 //EXPORTS 
 exports.build = build;
 exports.default = series(clean, build);
 exports.compilaSCSS = compilaSCSS;
+exports.watcher = watcher;
