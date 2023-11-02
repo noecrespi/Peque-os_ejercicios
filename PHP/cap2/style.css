@@ -1,0 +1,25 @@
+/* estilo del boton */
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* muestra el borde en rojo si el campo enviado está vacío y es obligatorio */
+input:focus:invalid {
+    border: 2px solid red;
+}
+
+/* Estilo para la lista ce contactos */
+.format-diary {
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.format-diary p {
+    font-weight: bold;
+}
